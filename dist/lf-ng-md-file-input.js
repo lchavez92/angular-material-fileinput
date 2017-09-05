@@ -19,8 +19,8 @@
             return "video";
         } else if (isAudioType(type, name)) {
             return "audio";
-        } else if (type === "word") {
-            return "word";
+        } else if (type === "office") {
+            return "office";
         }
         return "object";
     };
@@ -107,7 +107,7 @@
                             );
                             break;
                         }
-                    case 'word':
+                    case 'office':
                         {
                             element.replaceWith(
                                 "<iframe src='" + src + "' width='100%' height='160px' frameborder='0'>" +
