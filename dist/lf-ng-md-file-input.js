@@ -81,7 +81,6 @@
                 var fileType = scope.lfFileObj.lfFileType;
                 var tagType = scope.lfFileObj.lfTagType;
                 var unKnowClass = scope.lfUnknowClass;
-                element = element[0];
                 switch (tagType) {
                     case 'image':
                         {
@@ -112,6 +111,9 @@
                         {
                             element.replaceWith(
                                 "<iframe src='" + src + "' width='100%' height='160px' frameborder='0'>" +
+                                '<div class="lf-ng-md-file-input-preview-default">' +
+                                '<md-icon class="lf-ng-md-file-input-preview-icon ' + unKnowClass + '"></md-icon>' +
+                                '</div>' +
                                 "</iframe>"
                             );
                         }
