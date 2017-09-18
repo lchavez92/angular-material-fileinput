@@ -116,6 +116,7 @@
                                 '</div>' +
                                 "</iframe>"
                             );
+                            break;
                         }
                     default:
                         {
@@ -129,6 +130,7 @@
                                 '</div>' +
                                 '</object>'
                             );
+                            break;
                         }
                 }
             }
