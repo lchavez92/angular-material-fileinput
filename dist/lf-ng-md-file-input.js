@@ -81,6 +81,7 @@
                 var fileType = scope.lfFileObj.lfFileType;
                 var tagType = scope.lfFileObj.lfTagType;
                 var unKnowClass = scope.lfUnknowClass;
+                element = element[0];
                 switch (tagType) {
                     case 'image':
                         {
