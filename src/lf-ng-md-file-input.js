@@ -120,11 +120,12 @@
                         }
                     default:
                         {
-                            /*if (scope.lfFileObj.lfFile == void 0) {
+                            if (scope.lfFileObj.lfFile == void 0 && fileType !== "application/pdf") {
                                 fileType = 'unknown/unknown';
-                            }*/
+                            }
+
                             element.replaceWith(
-                                '<object data="' + src + '">' +
+                                '<object type="' + fileType + '" data="' + src + '">' +
                                 '<div class="lf-ng-md-file-input-preview-default">' +
                                 '<md-icon class="lf-ng-md-file-input-preview-icon ' + unKnowClass + '"></md-icon>' +
                                 '</div>' +
